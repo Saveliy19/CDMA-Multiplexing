@@ -27,8 +27,8 @@ if __name__ == '__main__':
     walsh_codes_matrix = make_walsh_matrix(len(stantion_codes) - 1)
 
     i = 0
-    for key, value in enumerate(stantion_codes):
-        stantion_codes[value] = walsh_codes_matrix[i]
+    for key in stantion_codes:
+        stantion_codes[key] = walsh_codes_matrix[i]
         i+=1
 
     print(stantion_codes)
